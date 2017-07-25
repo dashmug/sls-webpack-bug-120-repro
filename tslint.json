@@ -1,0 +1,86 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-eslint-rules",
+    "tslint-config-airbnb"
+  ],
+  "rules": {
+    "align": [
+      true,
+      "parameters",
+      "statements"
+    ],
+    "trailing-comma": [
+      "error",
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "cyclomatic-complexity": [
+      true,
+      10
+    ],
+    "ter-indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
+    "max-line-length": [
+      true,
+      120
+    ],
+    "newline-before-return": [
+      "warn"
+    ],
+    "no-console": [
+      true,
+      "log"
+    ],
+    "no-extra-semi": [
+      "error"
+    ],
+    "no-multi-spaces": [
+      "warn",
+      {
+        "exceptions": {
+          "VariableDeclarator": true
+        }
+      }
+    ],
+    "no-param-reassign": [
+      "warn",
+      {
+        "props": false
+      }
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "comment-format": [
+      true
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "no-consecutive-blank-lines": false,
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "max-classes-per-file": false,
+    "no-trailing-whitespace": [true, "ignore-template-strings"]
+  }
+}

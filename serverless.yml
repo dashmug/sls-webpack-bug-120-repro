@@ -1,0 +1,42 @@
+service: core
+
+
+plugins:
+  - serverless-webpack
+
+
+package:
+  individually: true
+  exclude:
+    - "**/*"
+
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  cfLogs: true
+  memorySize: 1024
+  timeout: 10
+
+
+functions:
+  ramda:
+    handler: src/ramda.handler
+    events:
+      - http:
+          path: "ramda"
+          method: any
+          cors: true
+    package:
+      include:
+        - "src/ramda.*"
+  lodash:
+      handler: src/lodash.handler
+      events:
+        - http:
+            path: "lodash"
+            method: any
+            cors: true
+      package:
+        include:
+          - "src/lodash.*"
