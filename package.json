@@ -18,7 +18,7 @@
     "@types/ramda": "^0.24.4",
     "awesome-typescript-loader": "^3.2.1",
     "serverless": "^1.18.1",
-    "serverless-webpack": "2.1.0",
+    "serverless-webpack": "^2.2.0",
     "tslint": "^5.5.0",
     "tslint-config-airbnb": "^5.2.1",
     "tslint-eslint-rules": "^4.1.1",
