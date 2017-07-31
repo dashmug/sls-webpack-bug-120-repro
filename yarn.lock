@@ -3012,9 +3012,9 @@ serverless-webpack@^2.0.0:
     fs-extra "^0.26.7"
     npm-programmatic "0.0.5"
 
-serverless@1.17.0:
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.17.0.tgz#7a221d93c2f50511c94fa89631384bf34efa46b1"
+serverless@^1.18.1:
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.18.1.tgz#ca566e9c480b9f0376a634625970693946eb33b6"
   dependencies:
     apollo-client "^1.4.2"
     archiver "^1.1.0"
